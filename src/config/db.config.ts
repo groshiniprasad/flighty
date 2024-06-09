@@ -1,5 +1,5 @@
 export const config = {
-    HOST: "localhost",
+    HOST: "postgres",
     USER: "postgres",
     PASSWORD: "postgres",
     DB: "testing",

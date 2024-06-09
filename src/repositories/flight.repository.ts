@@ -7,7 +7,7 @@ import { SearchCondition } from "../interfaces/utils.interface";
 
 export  class FlightRepository implements IFlightRepository {
     
-    async retrieveAll(searchParams: { registration?: string }): Promise<Flight[]> { 
+    async retrieveAll(searchParams?: { registration?: string }): Promise<Flight[]> { 
         try {
             let condition: SearchCondition = {};
         

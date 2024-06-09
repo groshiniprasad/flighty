@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "dev": "ts-node-dev --poll dist/server --sourcemap",
+    "dev": "ts-node-dev --poll dist/src/server",
     "build": "rimraf .dist && tsc",
     "start": "npm run build && node dist/server",
     "test": "jest",
@@ -18,7 +18,8 @@
     "lodash": "^4.17.21",
     "pg": "^8.12.0",
     "sequelize": "^6.37.3",
-    "sequelize-typescript": "^2.1.6"
+    "sequelize-typescript": "^2.1.6",
+    "typeorm": "^0.3.20"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
@@ -29,6 +30,7 @@
     "jest": "^29.7.0",
     "rimraf": "^5.0.7",
     "ts-jest": "^29.1.4",
+    "ts-mockito": "^2.6.1",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.5"
